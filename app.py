@@ -1,3 +1,13 @@
+from measurement_theory import (
+    classify_blood_pressure,
+    classify_heart_rate,
+    classify_temperature,
+    classify_oxygen_saturation,
+    compute_patient_risk_score,
+    validate_vital_sign,
+    BPCategory
+)
+
 from flask import Flask, render_template_string, redirect, url_for, flash, request, session, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
